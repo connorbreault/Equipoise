@@ -1,0 +1,174 @@
+body { 
+    background: black;
+    background: url(imgs/background.png) no-repeat; 
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed
+}
+#definition{
+    width: 75%;
+}
+#mainContainer{
+    width: 85%;
+    margin: 30px auto;
+}
+#definition{
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
+}
+#headLogo{
+    -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 7s; /* Firefox < 16 */
+    -ms-animation: fadein 7s; /* Internet Explorer */
+    -o-animation: fadein 7s; /* Opera < 12.1 */
+    animation: fadein 7s;
+}
+.mainCollapsible{
+    -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 7s; /* Firefox < 16 */
+    -ms-animation: fadein 7s; /* Internet Explorer */
+    -o-animation: fadein 7s; /* Opera < 12.1 */
+    animation: fadein 7s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.mainHeader{
+    height: 65px;
+    background-size: cover !important;
+    background-repeat: round !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border: none;
+    border-radius: 15px;
+    margin: -8px auto
+} */
+.mainHeader:hover{
+    -webkit-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
+    -moz-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
+    box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
+}
+.mainBody{
+    padding: 0px;
+    border: none
+}
+.rainbowBody{
+    background: url(./imgs/pages/rainbow.png);
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+    margin: auto auto 15px auto;
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline white !important;
+    font-family: 'Cinzel', serif;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.69);
+}
+.linkText{
+    color: white;
+    text-decoration: underline white;
+}
+.linkText:hover{
+    color: #1c3433
+}
+.linkImg{
+    border-radius: 15px;
+}
+.linkImg:hover{
+    -webkit-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+    -moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+    box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+}
+#contactBody{
+    padding: 15px !important
+}
+.albumCover{
+    width: 100%
+}
+.contactEmails{
+    font-size: 10px
+}
+#FCSignupButton{
+    background: url(./imgs/pages/rainbow.png);
+}
+#FCSignupButton:hover{
+    border: #01BAEF 2px solid;
+    color: #01BAEF
+}
+#bcLink{
+    width: 125% !important;
+}
+.newsImg:hover{
+    -webkit-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+    -moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+    box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+}
+.buyTickets{
+    background: none;
+    border: gold solid 1px;
+    border-radius: 20px;
+}
+.buyTickets:hover{
+    color: gold;
+    -webkit-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    background: none !important
+}
+
+@media only screen and ( min-width: 350px ) {
+    .contactEmails{
+    font-size: inherit
+    }
+}
+@media only screen and ( min-width: 545px ) {
+body{
+    background-size: cover;
+    background-attachment: scroll;
+}
+#definition{
+    width: 75%
+}
+#mainContainer{
+    width: 50%;
+}
+.mainHeader{
+    height: 80px
+}
+#nomadicEmail{
+    font-size: inherit
+}
+}
+@media only screen and ( min-width: 800px ) {
+    #mainContainer{
+        width: 35%
+    }
+    .mainHeader{
+        height: 95px;
+        margin: -10px auto
+    }
+}
